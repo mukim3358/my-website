@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ShopHub Pro</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="cart">Cart: <span id="cartCount">0</span></div>
+
+<header>
+    <div class="logo">ShopHub</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#products">Shop</a>
+        <a href="#categories">Categories</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Discover Trending Products 🔥</h1>
+    <p>Best deals + fast delivery</p>
+    <button onclick="scrollToProducts()">Shop Now</button>
+</section>
+
+<section class="categories" id="categories">
+    <div class="cat">📱 Electronics</div>
+    <div class="cat">👕 Fashion</div>
+    <div class="cat">👜 Accessories</div>
+    <div class="cat">💄 Beauty</div>
+</section>
+
+<section class="products" id="products">
+    <div class="card">
+        <img src="https://via.placeholder.com/200">
+        <h4>Smart Watch</h4>
+        <p>₹2999</p>
+        <button onclick="addCart('Smart Watch', 2999)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/200">
+        <h4>Headphones</h4>
+        <p>₹1999</p>
+        <button onclick="addCart('Headphones', 1999)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/200">
+        <h4>Shoes</h4>
+        <p>₹2499</p>
+        <button onclick="addCart('Shoes', 2499)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/200">
+        <h4>Backpack</h4>
+        <p>₹1499</p>
+        <button onclick="addCart('Backpack', 1499)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/200">
+        <h4>Wireless Mouse</h4>
+        <p>₹899</p>
+        <button onclick="addCart('Wireless Mouse', 899)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/200">
+        <h4>USB-C Cable</h4>
+        <p>₹299</p>
+        <button onclick="addCart('USB-C Cable', 299)">Add to Cart</button>
+    </div>
+</section>
+
+<section class="offer">
+    <h2>🎉 Special Offer</h2>
+    <p>Get 20% OFF on your first order! Use code: WELCOME20</p>
+</section>
+
+<section class="trust">
+    <div>✅ 100% Authentic Products</div>
+    <div>🚚 Fast Delivery</div>
+    <div>🔒 Secure Payments</div>
+    <div>↩️ Easy Returns</div>
+</section>
+
+<div class="whatsapp" onclick="openWhatsApp()">💬</div>
+
+<footer id="contact">
+    <p>&copy; 2026 ShopHub Pro. All rights reserved.</p>
+    <p>Contact: support@shophub.com | Phone: +91-9999-9999</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
